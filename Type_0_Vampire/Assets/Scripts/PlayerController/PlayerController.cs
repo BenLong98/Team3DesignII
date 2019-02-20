@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject batModel, playerModel;
     [SerializeField] GameObject particleTransferPrefab;
 
-    private bool isBat = false;
+    private bool isBat = false, isSwitching = false;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
 
@@ -24,10 +24,14 @@ public class PlayerController : MonoBehaviour {
     }
 
     IEnumerator StartSwitchModels() {
+        isSwitching = true;
+        
+
         GameObject particle = Instantiate(particleTransferPrefab, this.gameObject.transform);
         Destroy(particle, 1.5f);
-         yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.5f);
         SwitchModels();
+        isSwitching = false;
     }
 
     void LateUpdate()
@@ -65,8 +69,11 @@ public class PlayerController : MonoBehaviour {
         }
         else {
         }
-        // Move the controller
-        controller.Move(moveDirection * Time.deltaTime);
+        if (isSwitching == false) {
+            // Move the controller
+            controller.Move(moveDirection * Time.deltaTime);
+        }
+
     }
 
 

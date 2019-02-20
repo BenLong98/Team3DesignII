@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour {
 
 
     [SerializeField] GameObject batModel, playerModel;
-    [SerializeField] Camera insideCam, outsideCam;
 
     private bool isBat = false;
     private Vector3 moveDirection = Vector3.zero;
@@ -86,16 +85,6 @@ public class PlayerController : MonoBehaviour {
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Camera-Inside") {
-            insideCam.gameObject.SetActive(true);
-            outsideCam.gameObject.SetActive(false);
-        }
-        if (other.tag == "Camera-Outside") {
-            outsideCam.gameObject.SetActive(true);
-            insideCam.gameObject.SetActive(false);
-        }
-    }
+
 
 }

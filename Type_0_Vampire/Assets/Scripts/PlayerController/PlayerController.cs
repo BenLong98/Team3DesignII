@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
 
 
     [SerializeField] GameObject batModel, playerModel;
+    [SerializeField] GameObject particleTransferPrefab;
 
     private bool isBat = false;
     private Vector3 moveDirection = Vector3.zero;
@@ -22,11 +23,19 @@ public class PlayerController : MonoBehaviour {
         controller = GetComponent<CharacterController>();
     }
 
+    IEnumerator StartSwitchModels() {
+        GameObject particle = Instantiate(particleTransferPrefab, this.gameObject.transform);
+        Destroy(particle, 1.5f);
+         yield return new WaitForSeconds(1.5f);
+        SwitchModels();
+    }
+
     void LateUpdate()
     {
         if (Input.GetButtonDown("Jump"))
         {
-            SwitchModels();
+            StartCoroutine("StartSwitchModels");
+           
         }
 
         if (!isBat)
@@ -62,6 +71,7 @@ public class PlayerController : MonoBehaviour {
 
 
     void SwitchModels() {
+
         if (!isBat)
         {
             batModel.SetActive(true);

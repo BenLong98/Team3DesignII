@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: e6fe53438a892d444a9337992717f4b8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BackWall
+    100002: BeveledWall
+    100004: BeveledWall2
+    100006: BeveledWall4
+    100008: BeveledWall5
+    100010: DividerWalls
+    100012: DoorRVentL1
+    100014: DoreRNoVent
+    100016: Floor
+    100018: HallwayOutLineWalls
+    100020: //RootNode
+    100022: LowerStairsStart
+    100024: LowerStairsStart1
+    100026: RoomDoors
+    100028: Stairs
+    100030: Start_ExitWalls
+    100032: UpperStairsStart
+    100034: UpperStairsStart1
+    100036: Wall
+    100038: Wall1
+    100040: WallLeftStart
+    100042: WallRightExit
+    100044: WallStart
+    100046: WallStart1
+    400000: BackWall
+    400002: BeveledWall
+    400004: BeveledWall2
+    400006: BeveledWall4
+    400008: BeveledWall5
+    400010: DividerWalls
+    400012: DoorRVentL1
+    400014: DoreRNoVent
+    400016: Floor
+    400018: HallwayOutLineWalls
+    400020: //RootNode
+    400022: LowerStairsStart
+    400024: LowerStairsStart1
+    400026: RoomDoors
+    400028: Stairs
+    400030: Start_ExitWalls
+    400032: UpperStairsStart
+    400034: UpperStairsStart1
+    400036: Wall
+    400038: Wall1
+    400040: WallLeftStart
+    400042: WallRightExit
+    400044: WallStart
+    400046: WallStart1
+    2100000: HallWay
+    2100002: Wall2
+    2100004: NurseWall
+    2100006: RoomWall
+    2100008: DoorNoVent
+    2100010: WallVent
+    2100012: Start_ExitWall
+    2100014: LowerStairs
+    2100016: UpperStairs
+    2300000: BackWall
+    2300002: BeveledWall
+    2300004: BeveledWall2
+    2300006: BeveledWall4
+    2300008: BeveledWall5
+    2300010: DoorRVentL1
+    2300012: DoreRNoVent
+    2300014: Floor
+    2300016: LowerStairsStart
+    2300018: LowerStairsStart1
+    2300020: UpperStairsStart
+    2300022: UpperStairsStart1
+    2300024: Wall
+    2300026: Wall1
+    2300028: WallLeftStart
+    2300030: WallRightExit
+    2300032: WallStart
+    2300034: WallStart1
+    3300000: BackWall
+    3300002: BeveledWall
+    3300004: BeveledWall2
+    3300006: BeveledWall4
+    3300008: BeveledWall5
+    3300010: DoorRVentL1
+    3300012: DoreRNoVent
+    3300014: Floor
+    3300016: LowerStairsStart
+    3300018: LowerStairsStart1
+    3300020: UpperStairsStart
+    3300022: UpperStairsStart1
+    3300024: Wall
+    3300026: Wall1
+    3300028: WallLeftStart
+    3300030: WallRightExit
+    3300032: WallStart
+    3300034: WallStart1
+    4300000: Floor
+    4300002: BackWall
+    4300004: WallLeftStart
+    4300006: WallRightExit
+    4300008: Wall
+    4300010: Wall1
+    4300012: BeveledWall
+    4300014: BeveledWall2
+    4300016: BeveledWall4
+    4300018: BeveledWall5
+    4300020: DoreRNoVent
+    4300022: DoorRVentL1
+    4300024: WallStart
+    4300026: WallStart1
+    4300028: LowerStairsStart
+    4300030: UpperStairsStart
+    4300032: LowerStairsStart1
+    4300034: UpperStairsStart1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 74
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

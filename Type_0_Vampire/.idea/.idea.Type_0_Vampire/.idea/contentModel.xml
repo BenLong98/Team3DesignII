@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="NavMeshComponents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+            <e p="NavMeshLinkEditor.cs" t="Include" />
+            <e p="NavMeshModifierEditor.cs" t="Include" />
+            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+            <e p="NavMeshSurfaceEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="NavMeshLink.cs" t="Include" />
+            <e p="NavMeshModifier.cs" t="Include" />
+            <e p="NavMeshModifierVolume.cs" t="Include" />
+            <e p="NavMeshSurface.cs" t="Include" />
+          </e>
+        </e>
+        <e p="PluggableAI" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Action.cs" t="Include" />
+            <e p="ActiveStateDecision.cs" t="Include" />
+            <e p="AttackAction.cs" t="Include" />
+            <e p="ChaseAction.cs" t="Include" />
+            <e p="Decision.cs" t="Include" />
+            <e p="EnemyStats.cs" t="Include" />
+            <e p="LookDecision.cs" t="Include" />
+            <e p="PatrolAction.cs" t="Include" />
+            <e p="ScanDecision.cs" t="Include" />
+            <e p="State.cs" t="Include" />
+            <e p="StateController.cs" t="Include" />
+            <e p="Transition.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="PlayerController" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="Type_0_Vampire.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_Type_0_Vampire.-868129956.00" t="ExcludeRecursive" />
+  </component>
+</project>

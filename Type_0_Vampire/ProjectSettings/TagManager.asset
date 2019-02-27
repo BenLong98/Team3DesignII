@@ -8,6 +8,7 @@ TagManager:
   - Camera-Outside
   - Camera-Inside
   - Wall
+  - Nurse
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Player
+  - Obstacle
   - 
   - 
   - 

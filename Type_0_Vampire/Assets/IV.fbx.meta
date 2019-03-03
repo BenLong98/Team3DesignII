@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 72e468ae47744d54e9a1c319aebb7fd4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BloodBag
+    100002: //RootNode
+    100004: IV 1
+    100006: Wheel10
+    100008: Wheel11
+    100010: Wheel8
+    100012: Wheel9
+    400000: BloodBag
+    400002: //RootNode
+    400004: IV 1
+    400006: Wheel10
+    400008: Wheel11
+    400010: Wheel8
+    400012: Wheel9
+    2100000: WheelColor
+    2100002: IVColor
+    2100004: BloodBagColor
+    2300000: BloodBag
+    2300002: IV 1
+    2300004: Wheel10
+    2300006: Wheel11
+    2300008: Wheel8
+    2300010: Wheel9
+    3300000: BloodBag
+    3300002: IV 1
+    3300004: Wheel10
+    3300006: Wheel11
+    3300008: Wheel8
+    3300010: Wheel9
+    4300000: Wheel8
+    4300002: IV
+    4300004: Wheel9
+    4300006: Wheel10
+    4300008: Wheel11
+    4300010: BloodBag
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BloodBag_Base_Color
+    second: {fileID: 2800000, guid: 9555ca2f06859c948ac2af58453e6c76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BloodBag_Opacity
+    second: {fileID: 2800000, guid: 8b86ba621b4544c4aa19bf7da7fdc34b, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

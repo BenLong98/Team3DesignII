@@ -17,10 +17,12 @@ public class PlayerController : MonoBehaviour {
     private bool isBat = false, isSwitching = false;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
+    [SerializeField] Animator myAnim;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        myAnim = playerModel.GetComponent<Animator>();
     }
 
     IEnumerator StartSwitchModels() {
@@ -28,6 +30,7 @@ public class PlayerController : MonoBehaviour {
         
 
         GameObject particle = Instantiate(particleTransferPrefab, this.gameObject.transform);
+        particle.transform.position = playerModel.transform.position;
         Destroy(particle, 1.5f);
         yield return new WaitForSeconds(1.5f);
         SwitchModels();
@@ -36,6 +39,8 @@ public class PlayerController : MonoBehaviour {
 
     void LateUpdate()
     {
+
+
         if (Input.GetButtonDown("Jump"))
         {
             StartCoroutine("StartSwitchModels");
@@ -50,16 +55,41 @@ public class PlayerController : MonoBehaviour {
                 // move direction directly from axes
 
                 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-                moveDirection = transform.TransformDirection(moveDirection);
                 moveDirection = moveDirection * speed;
+
+                Vector3 facingrotation = Vector3.Normalize(new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")));
+                if (facingrotation == Vector3.zero)         //This condition prevents from spamming "Look rotation viewing vector is zero" when not moving.
+                    facingrotation = transform.forward;
+
+                transform.rotation = Quaternion.LookRotation(facingrotation);
+
+                if (moveDirection != Vector3.zero)
+                {
+                    myAnim.SetBool("Movement", true);
+                }
+                else {
+                    myAnim.SetBool("Movement", false);
+                }
+
+
+
 
 
             }
         }
         else {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
             moveDirection = moveDirection * speed;
+
+
+            Vector3 facingrotation = Vector3.Normalize(new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")));
+            if (facingrotation == Vector3.zero)         //This condition prevents from spamming "Look rotation viewing vector is zero" when not moving.
+                facingrotation = transform.forward;
+
+            transform.rotation = Quaternion.LookRotation(facingrotation);
+
+          
+
         }
 
         // Apply gravity

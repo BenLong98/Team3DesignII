@@ -63,6 +63,7 @@ public class StateController : MonoBehaviour
 		if (nextState != remainState)
 		{
 			currentState = nextState;
+			OnExitState();
 		}
 	}
 

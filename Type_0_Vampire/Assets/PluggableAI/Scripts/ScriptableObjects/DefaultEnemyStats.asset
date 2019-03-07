@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: DefaultEnemyStats
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  lookRange: 100
-  lookSphereCastRadius: 3
+  lookRange: 150
+  lookSphereCastRadius: 5
   attackRange: 40
   attackRate: 1
   attackForce: 15

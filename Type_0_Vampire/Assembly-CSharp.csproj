@@ -77,6 +77,8 @@
     <Compile Include="Assets\PluggableAI\Scripts\State.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\StateController.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\Transition.cs" />
+    <Compile Include="Assets\Scripts\CameraSwitching\CameraCollisionSpaces.cs" />
+    <Compile Include="Assets\Scripts\CameraSwitching\CameraProperties.cs" />
     <Compile Include="Assets\Scripts\PlayerController\AnimationController.cs" />
     <Compile Include="Assets\Scripts\PlayerController\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PlayerController.cs" />

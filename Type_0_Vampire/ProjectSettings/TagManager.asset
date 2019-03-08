@@ -9,6 +9,8 @@ TagManager:
   - Camera-Inside
   - Wall
   - Nurse
+  - Cam1
+  - RoomCamera
   layers:
   - Default
   - TransparentFX

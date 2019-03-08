@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject batModel, playerModel;
     [SerializeField] GameObject particleTransferPrefab;
 
+    [SerializeField] GameObject mainCam;
+
+
+
     private bool isBat = false, isSwitching = false;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
@@ -21,6 +25,7 @@ public class PlayerController : MonoBehaviour {
 
     void Start()
     {
+
         controller = GetComponent<CharacterController>();
         myAnim = playerModel.GetComponent<Animator>();
     }

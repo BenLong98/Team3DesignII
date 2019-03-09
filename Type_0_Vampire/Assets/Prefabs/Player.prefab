@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 95307891572709068}
   m_Layer: 0
   m_Name: PlayerModel
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1631,8 +1631,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1896963320898172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9971, y: 2.17, z: -5.1428}
-  m_LocalScale: {x: 1.3245981, y: 1.3245981, z: 1.3245981}
+  m_LocalPosition: {x: -2.9911, y: 2.332, z: -5.1336}
+  m_LocalScale: {x: 1.4745188, y: 1.4745188, z: 1.4745188}
   m_Children:
   - {fileID: 4929356516692930}
   - {fileID: 4947026167188452}
@@ -2495,7 +2495,9 @@ MonoBehaviour:
   particleTransferPrefab: {fileID: 1576739829014764, guid: 856d991c23f0ca24aa91a62512c9345e,
     type: 2}
   mainCam: {fileID: 0}
+  amountOfDancesfoundperBag: 1
   myAnim: {fileID: 0}
+  gatherbloodText: {fileID: 0}
 --- !u!137 &137112480958949254
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2912,7 +2914,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.32
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08

@@ -61,10 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BloodCollection.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <Compile Include="Assets\NurseAnimationController.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\Action.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\ActiveStateDecision.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\AttackAction.cs" />
@@ -77,11 +79,10 @@
     <Compile Include="Assets\PluggableAI\Scripts\State.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\StateController.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\Transition.cs" />
-    <Compile Include="Assets\Scripts\CameraSwitching\CameraCollisionSpaces.cs" />
-    <Compile Include="Assets\Scripts\CameraSwitching\CameraProperties.cs" />
     <Compile Include="Assets\Scripts\PlayerController\AnimationController.cs" />
     <Compile Include="Assets\Scripts\PlayerController\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Vents\VentCollision.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Design II - Big Project/Team3DesignII/Type_0_Vampire/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

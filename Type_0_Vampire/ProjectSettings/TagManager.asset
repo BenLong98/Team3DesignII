@@ -11,6 +11,8 @@ TagManager:
   - Nurse
   - Cam1
   - RoomCamera
+  - Player-Character
+  - BloodBag
   layers:
   - Default
   - TransparentFX

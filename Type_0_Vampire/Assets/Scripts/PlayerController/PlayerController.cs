@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -16,12 +17,20 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField] GameObject mainCam;
 
-
+    [SerializeField] int amountOfDancesfoundperBag = 1;
 
     private bool isBat = false, isSwitching = false;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     [SerializeField] Animator myAnim;
+
+    [SerializeField] GameObject gatherbloodText;
+
+
+    public bool GetIsBat() {
+        return isBat;
+    }
+
 
     void Start()
     {
@@ -101,6 +110,9 @@ public class PlayerController : MonoBehaviour {
         if (!isBat)
         {
             moveDirection.y = moveDirection.y - (gravity * Time.deltaTime * gravityMutli);
+            if (Input.GetKeyDown(KeyCode.C)) {
+                Debug.Log("YOO OYOO");
+            }
         }
         else {
         }
@@ -108,6 +120,11 @@ public class PlayerController : MonoBehaviour {
             // Move the controller
             controller.Move(moveDirection * Time.deltaTime);
         }
+
+
+
+       
+
 
     }
 
@@ -121,7 +138,7 @@ public class PlayerController : MonoBehaviour {
 
             //Reset the height of the collider
             controller.height = 1.0f;
-            controller.center = new Vector3(0f, 1.6f, 0f);
+            controller.center = new Vector3(0f, 0.98f, 0f);
 
             isBat = true;
         }
@@ -137,6 +154,42 @@ public class PlayerController : MonoBehaviour {
     }
 
 
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "BloodBag")
+        {
+            //enable text directions
+            gatherbloodText.SetActive(true);
+
+            if (other.gameObject.GetComponent<BloodCollection>().gatheredAlready == true) {
+                gatherbloodText.SetActive(false);
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.E) &&
+                other.gameObject.GetComponent<BloodCollection>().amountOfUses > 0)
+            {
+                other.gameObject.GetComponent<BloodCollection>().amountOfUses--;
+                other.gameObject.GetComponent<BloodCollection>().gatheredAlready = true;
+                Debug.Log("Gathered");
+            }
+            else if (Input.GetKeyDown(KeyCode.E) && other.gameObject.GetComponent<BloodCollection>().amountOfUses <= 0)
+            {
+              
+                Debug.Log("Already Gathered");
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "BloodBag")
+        {
+            //disable text for bloodbag
+            gatherbloodText.SetActive(false);
+        }
+    }
 
 
 }

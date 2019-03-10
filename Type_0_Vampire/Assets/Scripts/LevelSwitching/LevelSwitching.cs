@@ -36,7 +36,7 @@ public class LevelSwitching : MonoBehaviour {
                 break;
             case 2:
                 ClearLevels();
-                levels[1].SetActive(true);
+                levels[2].SetActive(true);
                 player.transform.position = playerSpawnPos;
                 break;
             case 3:

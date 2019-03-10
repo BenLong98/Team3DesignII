@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 382754253c22191489b8305ae8c24e57
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: LargeLeaf
+    100002: LargeLeaf1
+    100004: LargeLeaf10
+    100006: LargeLeaf11
+    100008: LargeLeaf12
+    100010: LargeLeaf13
+    100012: LargeLeaf14
+    100014: LargeLeaf2
+    100016: LargeLeaf3
+    100018: LargeLeaf4
+    100020: LargeLeaf5
+    100022: LargeLeaf6
+    100024: LargeLeaf7
+    100026: LargeLeaf8
+    100028: LargeLeaf9
+    100030: LargeLeafStem
+    100032: //RootNode
+    100034: TaperedPot
+    400000: LargeLeaf
+    400002: LargeLeaf1
+    400004: LargeLeaf10
+    400006: LargeLeaf11
+    400008: LargeLeaf12
+    400010: LargeLeaf13
+    400012: LargeLeaf14
+    400014: LargeLeaf2
+    400016: LargeLeaf3
+    400018: LargeLeaf4
+    400020: LargeLeaf5
+    400022: LargeLeaf6
+    400024: LargeLeaf7
+    400026: LargeLeaf8
+    400028: LargeLeaf9
+    400030: LargeLeafStem
+    400032: //RootNode
+    400034: TaperedPot
+    2100000: BigLeafColor
+    2100002: BigLeafOpacity
+    2300000: LargeLeaf
+    2300002: LargeLeaf1
+    2300004: LargeLeaf10
+    2300006: LargeLeaf11
+    2300008: LargeLeaf12
+    2300010: LargeLeaf13
+    2300012: LargeLeaf14
+    2300014: LargeLeaf2
+    2300016: LargeLeaf3
+    2300018: LargeLeaf4
+    2300020: LargeLeaf5
+    2300022: LargeLeaf6
+    2300024: LargeLeaf7
+    2300026: LargeLeaf8
+    2300028: LargeLeaf9
+    2300030: LargeLeafStem
+    2300032: TaperedPot
+    3300000: LargeLeaf
+    3300002: LargeLeaf1
+    3300004: LargeLeaf10
+    3300006: LargeLeaf11
+    3300008: LargeLeaf12
+    3300010: LargeLeaf13
+    3300012: LargeLeaf14
+    3300014: LargeLeaf2
+    3300016: LargeLeaf3
+    3300018: LargeLeaf4
+    3300020: LargeLeaf5
+    3300022: LargeLeaf6
+    3300024: LargeLeaf7
+    3300026: LargeLeaf8
+    3300028: LargeLeaf9
+    3300030: LargeLeafStem
+    3300032: TaperedPot
+    4300000: TaperedPot
+    4300002: LargeLeaf1
+    4300004: LargeLeaf2
+    4300006: LargeLeaf3
+    4300008: LargeLeaf4
+    4300010: LargeLeaf5
+    4300012: LargeLeaf6
+    4300014: LargeLeaf7
+    4300016: LargeLeaf8
+    4300018: LargeLeaf9
+    4300020: LargeLeaf10
+    4300022: LargeLeaf11
+    4300024: LargeLeaf12
+    4300026: LargeLeaf13
+    4300028: LargeLeaf14
+    4300030: LargeLeaf
+    4300032: LargeLeafStem
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

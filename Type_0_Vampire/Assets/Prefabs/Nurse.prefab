@@ -1007,7 +1007,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4364791202424888}
   - component: {fileID: 33129285845264612}
-  - component: {fileID: 143671626051291420}
   m_Layer: 0
   m_Name: Nurse
   m_TagString: Nurse
@@ -1432,8 +1431,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1946183487842452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.26916468, y: 2.150411, z: -0.083517246}
+  m_LocalScale: {x: 0.013594177, y: 1.4728843, z: 0.117629856}
   m_Children:
   - {fileID: 4971132121162886}
   m_Father: {fileID: 0}
@@ -2375,23 +2374,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00335523, y: 0.030679323, z: -0.010873404}
     m_Extent: {x: 0.0055946475, y: 0.010233525, z: 0.013155743}
   m_DirtyAABB: 0
---- !u!143 &143671626051291420
-CharacterController:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1946183487842452}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &195879999433923594
 NavMeshAgent:
   m_ObjectHideFlags: 1

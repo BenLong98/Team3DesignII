@@ -11,20 +11,27 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] float gravityMutli;
     [SerializeField] float gravity = 20.0f;
 
+    [SerializeField] bool vampireCanGather = true;
+
 
     [SerializeField] GameObject batModel, playerModel;
     [SerializeField] GameObject particleTransferPrefab;
 
     [SerializeField] GameObject mainCam;
 
-    [SerializeField] int amountOfDancesfoundperBag = 1;
+    [SerializeField] List<int> collectedDances = new List<int>();
+    [SerializeField] int amountDancesFound = 0;
 
     private bool isBat = false, isSwitching = false;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     [SerializeField] Animator myAnim;
 
+    public int currentLevel = 1;
+
     [SerializeField] GameObject gatherbloodText;
+    [SerializeField] Text amountText;
+
 
 
     public bool GetIsBat() {
@@ -135,7 +142,7 @@ public class PlayerController : MonoBehaviour {
         {
             batModel.SetActive(true);
             playerModel.SetActive(false);
-
+            vampireCanGather = false;
             //Reset the height of the collider
             controller.height = 1.0f;
             controller.center = new Vector3(0f, 0.98f, 0f);
@@ -145,6 +152,7 @@ public class PlayerController : MonoBehaviour {
         else if (isBat) {
             batModel.SetActive(false);
             playerModel.SetActive(true);
+            vampireCanGather = true;
 
             controller.height = 2.0f;
             controller.center = new Vector3(0f, 0f, 0f);
@@ -160,18 +168,41 @@ public class PlayerController : MonoBehaviour {
         if (other.tag == "BloodBag")
         {
             //enable text directions
+      
             gatherbloodText.SetActive(true);
 
-            if (other.gameObject.GetComponent<BloodCollection>().gatheredAlready == true) {
+            if (other.gameObject.GetComponent<BloodCollection>().gatheredAlready == true ||
+                vampireCanGather == false) {
                 gatherbloodText.SetActive(false);
             }
 
 
             if (Input.GetKeyDown(KeyCode.E) &&
-                other.gameObject.GetComponent<BloodCollection>().amountOfUses > 0)
+                other.gameObject.GetComponent<BloodCollection>().amountOfUses > 0 &&
+                vampireCanGather == true)
             {
                 other.gameObject.GetComponent<BloodCollection>().amountOfUses--;
                 other.gameObject.GetComponent<BloodCollection>().gatheredAlready = true;
+                if (amountDancesFound < 5) {
+                    collectedDances.Add(Random.Range(1, 20));
+                    amountText.text = (amountDancesFound + 1) + "/5";
+                    amountDancesFound++;
+                    StartCoroutine("BlinkBloodText");
+                }
+                if (amountDancesFound >= 5) {
+                    if (amountDancesFound != 10)
+                    {
+                        collectedDances[(amountDancesFound - 5)] = Random.Range(1, 20);
+                    }
+                    else {
+                        collectedDances[(amountDancesFound - 5) - 1] = Random.Range(1, 20);
+                    }
+                   
+                    amountDancesFound++;
+                    StartCoroutine("BlinkBloodText");
+                }
+              
+
                 Debug.Log("Gathered");
             }
             else if (Input.GetKeyDown(KeyCode.E) && other.gameObject.GetComponent<BloodCollection>().amountOfUses <= 0)
@@ -189,6 +220,13 @@ public class PlayerController : MonoBehaviour {
             //disable text for bloodbag
             gatherbloodText.SetActive(false);
         }
+    }
+
+
+    IEnumerator BlinkBloodText() {
+        amountText.color = Color.red;
+        yield return new WaitForSeconds(.5f);
+        amountText.color = Color.white;
     }
 
 

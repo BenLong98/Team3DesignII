@@ -61,12 +61,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BloodCollection.cs" />
+    <Compile Include="Assets\Animations\Cough and Lay down AI\ControlAI.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-    <Compile Include="Assets\NurseAnimationController.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\Action.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\ActiveStateDecision.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\AttackAction.cs" />
@@ -79,6 +78,9 @@
     <Compile Include="Assets\PluggableAI\Scripts\State.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\StateController.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\Transition.cs" />
+    <Compile Include="Assets\Scripts\BloodCollection.cs" />
+    <Compile Include="Assets\Scripts\LevelSwitching\LevelSwitching.cs" />
+    <Compile Include="Assets\Scripts\NurseAnimationController.cs" />
     <Compile Include="Assets\Scripts\PlayerController\AnimationController.cs" />
     <Compile Include="Assets\Scripts\PlayerController\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PlayerController.cs" />

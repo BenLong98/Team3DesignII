@@ -66,7 +66,6 @@
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
-    <Compile Include="Assets\PatientClothing.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\Action.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\ActiveStateDecision.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\AttackAction.cs" />
@@ -80,15 +79,12 @@
     <Compile Include="Assets\PluggableAI\Scripts\StateController.cs" />
     <Compile Include="Assets\PluggableAI\Scripts\Transition.cs" />
     <Compile Include="Assets\Scripts\BloodCollection.cs" />
-    <Compile Include="Assets\Scripts\Dancing\Dancing.cs" />
-    <Compile Include="Assets\Scripts\Dancing\DancingNurse.cs" />
     <Compile Include="Assets\Scripts\LevelSwitching\LevelSwitching.cs" />
     <Compile Include="Assets\Scripts\NurseAnimationController.cs" />
     <Compile Include="Assets\Scripts\PlayerController\AnimationController.cs" />
     <Compile Include="Assets\Scripts\PlayerController\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Vents\VentCollision.cs" />
-    <Compile Include="Assets\TurnDiscoBall.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Design II - Big Project/Team3DesignII/Type_0_Vampire/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

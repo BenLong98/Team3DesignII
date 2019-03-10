@@ -6,8 +6,7 @@ public class LevelSwitching : MonoBehaviour {
 
     [SerializeField] GameObject player;
 
-    [SerializeField] GameObject[] levels = new GameObject[4];
-    [SerializeField] GameObject mainSideCam;
+    [SerializeField] GameObject[] levels = new GameObject[3];
 
     [SerializeField] Vector3 playerSpawnPos;
 
@@ -44,14 +43,6 @@ public class LevelSwitching : MonoBehaviour {
                 levels[2].SetActive(true);
                 player.transform.position = playerSpawnPos;
                 break;
-            case 4:
-                ClearLevels();
-                levels[3].SetActive(true);
-                player.gameObject.SetActive(false);
-                mainSideCam.gameObject.SetActive(false);
-
-                break;
-
             default:
                 break;
         }

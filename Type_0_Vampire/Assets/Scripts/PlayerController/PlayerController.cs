@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField] GameObject mainCam;
 
-    [SerializeField] List<int> collectedDances = new List<int>();
+    public List<int> collectedDances = new List<int>();
     [SerializeField] int amountDancesFound = 0;
 
     private bool isBat = false, isSwitching = false;

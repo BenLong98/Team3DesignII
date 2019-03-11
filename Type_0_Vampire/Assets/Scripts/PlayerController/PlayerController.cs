@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject gatherbloodText;
     [SerializeField] Text amountText;
 
+    [SerializeField] AudioSource masterSource;
+    [SerializeField] AudioClip slurp;
 
 
     public bool GetIsBat() {
@@ -181,10 +183,11 @@ public class PlayerController : MonoBehaviour {
                 other.gameObject.GetComponent<BloodCollection>().amountOfUses > 0 &&
                 vampireCanGather == true)
             {
+                masterSource.PlayOneShot(slurp);
                 other.gameObject.GetComponent<BloodCollection>().amountOfUses--;
                 other.gameObject.GetComponent<BloodCollection>().gatheredAlready = true;
                 if (amountDancesFound < 5) {
-                    collectedDances.Add(Random.Range(1, 20));
+                    collectedDances.Add(Random.Range(1, 46));
                     amountText.text = (amountDancesFound + 1) + "/5";
                     amountDancesFound++;
                     StartCoroutine("BlinkBloodText");

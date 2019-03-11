@@ -1,24 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DancingNurse : MonoBehaviour
 {
     [SerializeField] float timeBetweenDances;
     [SerializeField] Animator myAnim;
-    [SerializeField] int[] danceMoves= new int[5];
+    public int[] danceMoves= new int[5];
+    public GameObject Dance;
 
     public void Start()
     {
         SetValues();
+        Dance.GetComponent<DanceHandler>().SetNurseScore();
         StartCoroutine("StartDances");
     }
 
 
     private void SetValues() {
+
         for (int i = 0; i < danceMoves.Length; i++) {
-            danceMoves[i] = Random.Range(1, 47);
+            danceMoves[i] = Random.Range(1, 46);
         }
+
     }
 
     public IEnumerator StartDances() {

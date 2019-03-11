@@ -10,6 +10,11 @@ public class LevelSwitching : MonoBehaviour {
     [SerializeField] GameObject mainSideCam;
 
     [SerializeField] Vector3 playerSpawnPos;
+    [SerializeField] AudioSource masterSource;
+    [SerializeField] AudioClip DanceMusic;
+    [SerializeField] GameObject gatheredImageUI;
+    [SerializeField] GameObject EndGamePanel;
+    [SerializeField] GameObject Dancer;
 
     private void Start()
     {
@@ -21,7 +26,7 @@ public class LevelSwitching : MonoBehaviour {
     {
         if (other.tag == "Player") {
             
-            other.gameObject.GetComponent<PlayerController>().currentLevel++;
+            other.gameObject.GetComponent<PlayerController>().currentLevel += 1;
             SwitchLevel();
         }
     }
@@ -45,11 +50,7 @@ public class LevelSwitching : MonoBehaviour {
                 player.transform.position = playerSpawnPos;
                 break;
             case 4:
-                ClearLevels();
-                levels[3].SetActive(true);
-                player.gameObject.SetActive(false);
-                mainSideCam.gameObject.SetActive(false);
-
+                LoadDanceLevel();
                 break;
 
             default:
@@ -62,6 +63,18 @@ public class LevelSwitching : MonoBehaviour {
         for (int i = 0; i < levels.Length; i++) {
             levels[i].SetActive(false);
         }
+    }
+
+    public void LoadDanceLevel() {
+        ClearLevels();
+        levels[3].SetActive(true);
+        gatheredImageUI.SetActive(false);
+        Dancer.GetComponent<DanceHandler>().SetScore();
+        EndGamePanel.SetActive(true);
+        player.gameObject.SetActive(false);
+        mainSideCam.gameObject.SetActive(false);
+        masterSource.clip = DanceMusic;
+        masterSource.Play();
     }
 
 

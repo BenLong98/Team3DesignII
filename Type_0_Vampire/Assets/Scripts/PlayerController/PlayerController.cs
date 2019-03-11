@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
     public List<int> collectedDances = new List<int>();
     [SerializeField] int amountDancesFound = 0;
 
-    private bool isBat = false, isSwitching = false;
+    private bool isBat = false, isSwitching = false, isInVent = false;
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
     [SerializeField] Animator myAnim;
@@ -38,6 +38,16 @@ public class PlayerController : MonoBehaviour {
 
     public bool GetIsBat() {
         return isBat;
+    }
+
+    public bool GetIsInVent()
+    {
+        return isInVent;
+    }
+
+    public void SetIsInVent(bool boolVal)
+    {
+        isInVent = boolVal;
     }
 
 

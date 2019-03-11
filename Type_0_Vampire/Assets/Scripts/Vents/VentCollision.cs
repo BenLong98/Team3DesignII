@@ -47,6 +47,7 @@ public class VentCollision : MonoBehaviour {
             controller.SetActive(false);
             mainCam.SetActive(false);
             isInVent = true;
+            controller.GetComponent<PlayerController>().SetIsInVent(true);
             directionText.SetActive(false);
 
             //Set the cam to false
@@ -64,6 +65,7 @@ public class VentCollision : MonoBehaviour {
             rightCam.SetActive(false);
 
             isInVent = false;
+            controller.GetComponent<PlayerController>().SetIsInVent(false);
             controlText.SetActive(false);
 
         }

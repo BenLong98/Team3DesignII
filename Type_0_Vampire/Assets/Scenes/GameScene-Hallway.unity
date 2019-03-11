@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657856, g: 0.49641234, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3793,7 +3793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7aaa7bb6b9384548b1e290d925e3732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 7ae067871e95f4ac3bdf05574368e36b, type: 2}
+  currentState: {fileID: 11400000, guid: 3cec973a8da034b58bded65550bedb00, type: 2}
   enemyStats: {fileID: 11400000, guid: 7d36427061c3c3341b14c5ddc05b51b6, type: 2}
   eyes: {fileID: 237032729}
   remainState: {fileID: 11400000, guid: 5c99577ebe094478e82c964311ee8587, type: 2}
@@ -5406,6 +5406,12 @@ Prefab:
       propertyPath: wayPointList.Array.data[1]
       value: 
       objectReference: {fileID: 337094597}
+    - target: {fileID: 114715193499470408, guid: 8b681a9a3003a08429dfa52cb7d6b546,
+        type: 2}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cec973a8da034b58bded65550bedb00,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b681a9a3003a08429dfa52cb7d6b546, type: 2}
   m_IsPrefabAsset: 0
@@ -7866,6 +7872,12 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.117629856
       objectReference: {fileID: 0}
+    - target: {fileID: 114715193499470408, guid: 8b681a9a3003a08429dfa52cb7d6b546,
+        type: 2}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cec973a8da034b58bded65550bedb00,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b681a9a3003a08429dfa52cb7d6b546, type: 2}
   m_IsPrefabAsset: 0
@@ -15308,6 +15320,12 @@ Prefab:
       propertyPath: wayPointList.Array.data[1]
       value: 
       objectReference: {fileID: 631124612}
+    - target: {fileID: 114715193499470408, guid: 8b681a9a3003a08429dfa52cb7d6b546,
+        type: 2}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cec973a8da034b58bded65550bedb00,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b681a9a3003a08429dfa52cb7d6b546, type: 2}
   m_IsPrefabAsset: 0
@@ -15327,7 +15345,7 @@ GameObject:
   - component: {fileID: 952901120}
   m_Layer: 0
   m_Name: LowerStairsStart1
-  m_TagString: Untagged
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20720,7 +20738,7 @@ GameObject:
   - component: {fileID: 1295496070}
   m_Layer: 0
   m_Name: LowerStairsStart1
-  m_TagString: Untagged
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28365,7 +28383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7aaa7bb6b9384548b1e290d925e3732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 7ae067871e95f4ac3bdf05574368e36b, type: 2}
+  currentState: {fileID: 11400000, guid: 3cec973a8da034b58bded65550bedb00, type: 2}
   enemyStats: {fileID: 11400000, guid: 7d36427061c3c3341b14c5ddc05b51b6, type: 2}
   eyes: {fileID: 1608034614}
   remainState: {fileID: 11400000, guid: 5c99577ebe094478e82c964311ee8587, type: 2}
@@ -34059,6 +34077,12 @@ Prefab:
       propertyPath: wayPointList.Array.data[1]
       value: 
       objectReference: {fileID: 631124612}
+    - target: {fileID: 114715193499470408, guid: 8b681a9a3003a08429dfa52cb7d6b546,
+        type: 2}
+      propertyPath: currentState
+      value: 
+      objectReference: {fileID: 11400000, guid: 3cec973a8da034b58bded65550bedb00,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b681a9a3003a08429dfa52cb7d6b546, type: 2}
   m_IsPrefabAsset: 0
@@ -34078,7 +34102,7 @@ GameObject:
   - component: {fileID: 1951474869}
   m_Layer: 0
   m_Name: LowerStairsStart1
-  m_TagString: Untagged
+  m_TagString: Stairs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34972,7 +34996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7aaa7bb6b9384548b1e290d925e3732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 7ae067871e95f4ac3bdf05574368e36b, type: 2}
+  currentState: {fileID: 11400000, guid: 3cec973a8da034b58bded65550bedb00, type: 2}
   enemyStats: {fileID: 11400000, guid: 7d36427061c3c3341b14c5ddc05b51b6, type: 2}
   eyes: {fileID: 2011768466}
   remainState: {fileID: 11400000, guid: 5c99577ebe094478e82c964311ee8587, type: 2}

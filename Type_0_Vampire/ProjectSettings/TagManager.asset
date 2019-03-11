@@ -13,6 +13,7 @@ TagManager:
   - RoomCamera
   - Player-Character
   - BloodBag
+  - Stairs
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu (menuName = "PluggableAI/Actions/Attack")]
 public class AttackAction : Action 
@@ -12,18 +13,9 @@ public class AttackAction : Action
 
     private void Attack(StateController controller)
     {
-        RaycastHit hit;
-		
-        Debug.DrawRay(controller.eyes.position, controller.eyes.forward.normalized * controller.enemyStats.attackRange, Color.green);
-
-        if (Physics.SphereCast(controller.eyes.position, controller.enemyStats.lookSphereCastRadius,
-                controller.eyes.forward, out hit, controller.enemyStats.attackRange) && hit.collider.CompareTag("Player"))
+        if (Vector3.Distance(controller.navMeshAgent.nextPosition, controller.chaseTarget.position) < 2)
         {
-            if (controller.CheckIfCountDownElapsed(controller.enemyStats.attackRate))
-            {
-//                controller.tankShooting.Fire(controller.enemyStats.attackForce, controller.enemyStats.attackRate);
-                Debug.Log("Shoot");
-            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
